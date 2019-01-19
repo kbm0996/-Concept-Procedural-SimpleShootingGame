@@ -1,0 +1,14 @@
+#ifndef __QUEUE_H__
+#define __QUEUE_H__
+
+//////////////////////////////////////////////////////////////
+// Queue for KeyProcess
+//
+//////////////////////////////////////////////////////////////
+#define dfMAX_QUEUE 10
+
+bool Enqueue(int iInData);
+bool Dequeue(int *pOutData);
+bool Peek(int *pOutData);
+
+#endif

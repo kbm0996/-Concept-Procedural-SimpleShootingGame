@@ -6,7 +6,7 @@
 //
 //////////////////////////////////////////////////////////////
 // Option
-#define dfMAX_ENEMY 5
+#define dfMAX_ENEMY 20
 #define dfMAX_BULLET 50
 
 // Scene

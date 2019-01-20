@@ -6,9 +6,10 @@
 //
 //////////////////////////////////////////////////////////////
 // Option
-#define dfMAX_ENEMY 60
+#define dfMAX_ENEMY 5
 #define dfMAX_BULLET 50
 
+// Scene
 #define dfSCENE_STAGE1 200 
 #define dfSCENE_STAGE2 201
 #define dfSCENE_TITLE 202
@@ -44,9 +45,6 @@
 // DRAW
 //
 //////////////////////////////////////////////////////////////
-#define dfMAX_ENEMY 60
-#define dfMAX_BULLET 50
-
 #define dfSCENE_STAGE1 200 
 #define dfSCENE_STAGE2 201
 #define dfSCENE_TITLE 202

@@ -41,15 +41,4 @@
 #define dfENTER 100
 #define dfESCAPE 101
 
-//////////////////////////////////////////////////////////////
-// DRAW
-//
-//////////////////////////////////////////////////////////////
-#define dfSCENE_STAGE1 200 
-#define dfSCENE_STAGE2 201
-#define dfSCENE_TITLE 202
-#define dfSCENE_GAMEOVER 203
-
-#define dfSCENE_PAUSE 204
-
 #endif // !__CONFIG_H__

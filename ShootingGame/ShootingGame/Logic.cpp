@@ -243,7 +243,7 @@ void PlayerLogic()
 {
 	int iAction;
 
-	if (Dequeue(&iAction))
+	while (Dequeue(&iAction))
 	{
 		if (iAction == dfUP)
 		{
@@ -294,57 +294,57 @@ void PlayerLogic()
 			CreateBullet(Player.iX, Player.iY, 0);
 		}
 
-		if (iAction == dfUP_ATTACK)
-		{
-			--Player.iY;
-			CreateBullet(Player.iX, Player.iY, 0);
-		}
+		//if (iAction == dfUP_ATTACK)
+		//{
+		//	--Player.iY;
+		//	CreateBullet(Player.iX, Player.iY, 0);
+		//}
 
-		if (iAction == dfDOWN_ATTACK)
-		{
-			++Player.iY;
-			CreateBullet(Player.iX, Player.iY, 0);
-		}
+		//if (iAction == dfDOWN_ATTACK)
+		//{
+		//	++Player.iY;
+		//	CreateBullet(Player.iX, Player.iY, 0);
+		//}
 
-		if (iAction == dfLEFT_ATTACK)
-		{
-			--Player.iX;
-			CreateBullet(Player.iX, Player.iY, 0);
-		}
+		//if (iAction == dfLEFT_ATTACK)
+		//{
+		//	--Player.iX;
+		//	CreateBullet(Player.iX, Player.iY, 0);
+		//}
 
-		if (iAction == dfRIGHT_ATTACK)
-		{
-			++Player.iX;
-			CreateBullet(Player.iX, Player.iY, 0);
-		}
+		//if (iAction == dfRIGHT_ATTACK)
+		//{
+		//	++Player.iX;
+		//	CreateBullet(Player.iX, Player.iY, 0);
+		//}
 
-		if (iAction == dfUPLEFT_ATTACK)
-		{
-			--Player.iY;
-			--Player.iX;
-			CreateBullet(Player.iX, Player.iY, 0);
-		}
+		//if (iAction == dfUPLEFT_ATTACK)
+		//{
+		//	--Player.iY;
+		//	--Player.iX;
+		//	CreateBullet(Player.iX, Player.iY, 0);
+		//}
 
-		if (iAction == dfUPRIGHT_ATTACK)
-		{
-			--Player.iY;
-			++Player.iX;
-			CreateBullet(Player.iX, Player.iY, 0);
-		}
+		//if (iAction == dfUPRIGHT_ATTACK)
+		//{
+		//	--Player.iY;
+		//	++Player.iX;
+		//	CreateBullet(Player.iX, Player.iY, 0);
+		//}
 
-		if (iAction == dfDOWNLEFT_ATTACK)
-		{
-			++Player.iY;
-			--Player.iX;
-			CreateBullet(Player.iX, Player.iY, 0);
-		}
+		//if (iAction == dfDOWNLEFT_ATTACK)
+		//{
+		//	++Player.iY;
+		//	--Player.iX;
+		//	CreateBullet(Player.iX, Player.iY, 0);
+		//}
 
-		if (iAction == dfDOWNRIGHT_ATTACK)
-		{
-			++Player.iY;
-			++Player.iX;
-			CreateBullet(Player.iX, Player.iY, 0);
-		}
+		//if (iAction == dfDOWNRIGHT_ATTACK)
+		//{
+		//	++Player.iY;
+		//	++Player.iX;
+		//	CreateBullet(Player.iX, Player.iY, 0);
+		//}
 
 		if (iAction == dfESCAPE)	// Pause
 		{

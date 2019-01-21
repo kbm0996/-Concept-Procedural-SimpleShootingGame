@@ -1,6 +1,7 @@
 #include <windows.h>
 #include <stdio.h>
 #include "Console.h"
+#include "_config.h"
 
 HANDLE  g_hConsole;
 

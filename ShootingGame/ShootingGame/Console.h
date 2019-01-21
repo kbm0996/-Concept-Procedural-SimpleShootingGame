@@ -26,9 +26,6 @@
 #ifndef __CONSOLE__
 #define __CONSOLE__
 
-#define dfSCREEN_WIDTH		81		// horizontal 80 spaces + NULL
-#define dfSCREEN_HEIGHT		25		// vertical 24 spaces 
-
 //-------------------------------------------------------------
 // Initialize Console
 //

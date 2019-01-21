@@ -5,48 +5,34 @@
  여기서 프로시저란 반환값이 없는 함수라고 보면 된다.
   
 ## 💻 슈팅 게임
- 간단한 오목 게임. _config.h의 define들을 변경하면 말(piece)의 모양, 판(map)의 넓이 등을 변경할 수 있다.
-커서의 위치는 방향키를 입력하여 제어 가능하며, 엔터 입력 시 말(piece)을 놓음과 동시에 상대방에게 차례(turn)을 넘긴다.
+ 캐릭터를 방향키로 움직이고 스페이스바로 투사체를 발사하여 적을 섬멸
 
-  ![capture](https://github.com/kbm0996/Procedural-Code-Example/blob/master/capture.jpg?raw=true)
+  ![capture](https://github.com/kbm0996/SimpleShootingGame-Procedural-/blob/master/GIF.gif?raw=true)
   
-  **figure 1. Gomoku*
-
-  ○ - Player1
-  ● - Player2
-  ◎ - Cursor
+  **figure 1. Shooting Game(animated)*
 
 
 ## 📐 워크플로우
- 객체지향형 프로그램의 구조와 작동 순서
 
-  ![workflow](https://github.com/kbm0996/Procedural-Code-Example/blob/master/workflow.JPG?raw=true)
+  ![workflow](https://github.com/kbm0996/SimpleShootingGame-Procedural-/blob/master/flowchart.jpg?raw=true)
   
   **figure 2. Workflow*
   
 ## 📑 구성
 ### 📋 _main.cpp
-  해시테이블(Hashtable) 클래스의 선언부와 정의부
+  프로그램이 실행되는 메인 함수
   
 ### 📋 Draw.h - Draw.cpp
-  해시테이블(Hashtable) 클래스의 선언부와 정의부
+  Player, Enemy, Boss, Bullet, Scene등을 Buffer에 반영
   
 ### 📋 Logic.h - Logic.cpp
-  해시테이블(Hashtable) 클래스의 선언부와 정의부
+  Player와 Enemy, Boss, Bullet의 행동을 실행시키고 Scene의 특수효과 등을 정의
   
 ### 📋 KeyProcess.h - KeyProcess.cpp
-  해시테이블(Hashtable) 클래스의 선언부와 정의부
+  키보드 조작을 Queue에 push
   
 ### 📋 Console.h - Console.cpp
-  해시테이블(Hashtable) 클래스의 선언부와 정의부
+  Buffer를 Console에 출력
   
 ### 📋 Queue.h - Queue.cpp
-  해시테이블(Hashtable) 클래스의 선언부와 정의부
-
-## 📌 주요 소스
-### 📋 Hashtable.h/cpp
-
-
-### 📋 SinglyLinkedlist.h
-  편의상 싱글 링크드리스트를 사용함. 이미 검증된 STL의 list를 사용해도 됨.
-
+  매우 간단한 Queue. 키 입력에 사용

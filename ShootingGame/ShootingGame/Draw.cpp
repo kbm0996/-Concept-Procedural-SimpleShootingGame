@@ -6,7 +6,6 @@
 
 char szScreenBuffer[dfSCREEN_HEIGHT][dfSCREEN_WIDTH];
 
-extern int g_iSCENE_Twinkle;
 extern int g_iState;
 
 void Buffer_Clear()
@@ -91,7 +90,7 @@ void Draw_Scene()
 		Draw_Sprite(46, 10, 'E');
 		Draw_Sprite(49, 10, 'R');
 
-		if (g_iSCENE_Twinkle == 1)
+		if (g_iScene_Twinkle == 1)
 		{
 			Draw_Sprite(63, 23, 'P');
 			Draw_Sprite(64, 23, 'r');
@@ -112,7 +111,7 @@ void Draw_Scene()
 	//	PAUSE
 	if (g_iState == dfSCENE_PAUSE)
 	{
-		if (g_iSCENE_Twinkle == 1)
+		if (g_iScene_Twinkle == 1)
 		{
 			Draw_Sprite(31, 10, 'P');
 			Draw_Sprite(34, 10, 'A');
@@ -146,7 +145,7 @@ void Draw_Scene()
 		}
 
 
-		if (g_iSCENE_Twinkle == 1)
+		if (g_iScene_Twinkle == 1)
 		{
 			Draw_Sprite(63, 23, 'P');
 			Draw_Sprite(64, 23, 'r');

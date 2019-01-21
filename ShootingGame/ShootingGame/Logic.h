@@ -20,6 +20,8 @@ void TitleScene_Logic();
 void PauseScene_Logic();
 void ResultScene_Logic();
 
+extern int g_iScene_Twinkle;
+
 //---------------------------------------------------------------
 //	GAME
 //---------------------------------------------------------------

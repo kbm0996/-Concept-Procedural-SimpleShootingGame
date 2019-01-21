@@ -82,13 +82,13 @@ void Result()
 //	SCENE
 //---------------------------------------------------------------
 
-int g_iSCENE_Twinkle = 1; // È­¸é ±ôºýÀÓ
+int g_iScene_Twinkle = 1; // È­¸é ±ôºýÀÓ
 
 void TitleScene_Logic()
 {
 	int iAction;
 
-	g_iSCENE_Twinkle *= -1;
+	g_iScene_Twinkle *= -1;
 
 	if (Dequeue(&iAction))
 	{
@@ -108,7 +108,7 @@ void PauseScene_Logic()
 {
 	int iAction;
 
-	g_iSCENE_Twinkle *= -1;
+	g_iScene_Twinkle *= -1;
 
 	if (Dequeue(&iAction))
 	{
@@ -123,7 +123,7 @@ void ResultScene_Logic()
 {
 	int iAction;
 
-	g_iSCENE_Twinkle *= -1;
+	g_iScene_Twinkle *= -1;
 
 	if (Dequeue(&iAction))
 	{

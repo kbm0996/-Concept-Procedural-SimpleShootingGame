@@ -29,7 +29,7 @@ void Buffer_Flip()
 {
 	for (int iCnt = 0; iCnt < dfSCREEN_HEIGHT; ++iCnt)
 	{
-		cs_MoveCursor(0, iCnt);
+		cs_SetCursor(0, iCnt);
 		printf(szScreenBuffer[iCnt]);
 	}
 }
